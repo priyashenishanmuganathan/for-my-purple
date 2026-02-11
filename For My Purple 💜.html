@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/ACER/Downloads/valentine.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>For My Purple 💜</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #14001f, #4b0082, #b19cd9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInPage 2s forwards;
+}
+
+@keyframes fadeInPage {
+    to { opacity: 1; }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 50px;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 60px rgba(186, 85, 211, 0.8);
+    width: 520px;
+}
+
+.glow-name {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #d580ff,
+                 0 0 20px #bf40ff,
+                 0 0 40px #8000ff;
+}
+
+#typing {
+    margin: 20px 0;
+    min-height: 50px;
+    font-size: 18px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.yes {
+    background: white;
+    color: #6a0dad;
+}
+
+.yes:hover {
+    transform: scale(1.1);
+    background: #e6ccff;
+}
+
+.no {
+    background: #2e003e;
+    color: white;
+}
+
+/* Floating Glow Particles */
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    box-shadow: 0 0 12px #d580ff;
+    animation: float 8s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>To My <span class="glow-name">Purple 💜</span></h1>
+
+    <div id="typing">From the moment I met you, everything felt softer, brighter, and somehow… magical.</div>
+
+    <h2>Will You Be My Valentine?</h2>
+
+    <button class="yes" onclick="yes()">Yes 💜</button>
+    <button class="no" onmouseover="moveButton(this)">No 😌</button>
+</div>
+
+<script>
+// Typing animation
+const text = "From the moment I met you, everything felt softer, brighter, and somehow… magical.";
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+    }
+}
+typeWriter();
+
+// Runaway No button
+function moveButton(button) {
+    button.style.position = "absolute";
+    button.style.top = Math.random() * (window.innerHeight - 50) + "px";
+    button.style.left = Math.random() * (window.innerWidth - 100) + "px";
+}
+
+// Floating Glow Particles
+setInterval(() => {
+    const particle = document.createElement("div");
+    particle.classList.add("particle");
+    particle.style.left = Math.random() * 100 + "vw";
+    particle.style.animationDuration = (Math.random() * 5 + 5) + "s";
+    document.body.appendChild(particle);
+
+    setTimeout(() => {
+        particle.remove();
+    }, 8000);
+}, 500);
+
+// YES Button Final Screen
+function yes() {
+    document.body.innerHTML = `
+        <div style="
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        background:linear-gradient(135deg,#2e003e,#8000ff);
+        text-align:center;
+        color:white;
+        animation: fadeInPage 2s forwards;
+        padding:20px;
+        ">
+            <h1 style="font-size:50px;text-shadow:0 0 25px #fff;">
+                I love you, My Purple 💜
+            </h1>
+
+            <p style="
+                font-size:20px;
+                margin-top:25px;
+                opacity:0;
+                animation:fadeInText 2s forwards 1.5s;
+                line-height:1.7;
+                max-width:600px;
+            ">
+                And I always will ✨<br><br>
+                We were just two idiots laughing at everything…<br>
+                and somehow I ended up loving you.<br>
+                Still my best friend. Now my forever.<br><br>
+                I love you, Syggg 💜
+            </p>
+        </div>
+
+        <style>
+        @keyframes fadeInText {
+            to { opacity:1; }
+        }
+        </style>
+    `;
+}
+</script>
+
+
+
+<div class="particle" style="left: 42.8097vw; animation-duration: 8.94313s;"></div><div class="particle" style="left: 88.324vw; animation-duration: 6.42063s;"></div><div class="particle" style="left: 41.0645vw; animation-duration: 6.96142s;"></div><div class="particle" style="left: 70.0736vw; animation-duration: 7.31782s;"></div><div class="particle" style="left: 12.4659vw; animation-duration: 5.64755s;"></div><div class="particle" style="left: 41.9122vw; animation-duration: 8.85734s;"></div><div class="particle" style="left: 50.1428vw; animation-duration: 8.18937s;"></div><div class="particle" style="left: 13.0273vw; animation-duration: 5.32104s;"></div><div class="particle" style="left: 8.88394vw; animation-duration: 5.84772s;"></div><div class="particle" style="left: 78.9901vw; animation-duration: 9.68436s;"></div><div class="particle" style="left: 60.4639vw; animation-duration: 9.13742s;"></div><div class="particle" style="left: 27.4058vw; animation-duration: 8.2528s;"></div><div class="particle" style="left: 83.3494vw; animation-duration: 8.33819s;"></div><div class="particle" style="left: 23.7835vw; animation-duration: 5.59932s;"></div><div class="particle" style="left: 59.0854vw; animation-duration: 9.8701s;"></div><div class="particle" style="left: 16.4875vw; animation-duration: 5.73994s;"></div></body></html>
